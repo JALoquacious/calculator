@@ -19,7 +19,7 @@ $(document).ready(function () {
                          '\nSwitching sign to positive.');
             return -n;
         } else {
-            console.log(Math.sqrt(parseFloat(n))); // DEBUG
+            // console.log(Math.sqrt(parseFloat(n))); // DEBUG
             return Math.sqrt(parseFloat(n));
         }
         }
@@ -57,7 +57,7 @@ $(document).ready(function () {
         }
         else {
             curVal = stripZeros(curVal + $(this).text());
-            console.log(curVal); // DEBUG
+            // console.log(curVal); // DEBUG
             $('#screen').text(curVal); // .slice(1));
         }
     }//================================================================//
@@ -72,7 +72,7 @@ $(document).ready(function () {
             curVal   = 0;
             operator = $(this).attr('id');
             decFlag  = false;
-            console.log(operator); // DEBUG
+            // console.log(operator); // DEBUG
             $('#screen').text($(this).text());
         }
     }//================================================================//
@@ -85,7 +85,7 @@ $(document).ready(function () {
         else {
             var fn = $(this).attr('id');
             curVal = ops[fn](curVal);
-            console.log(fn, typeof(fn)); // DEBUG
+            // console.log(fn, typeof(fn)); // DEBUG
             $('#screen').text(formatDisplay(curVal));
         }
     }//================================================================//
@@ -110,7 +110,7 @@ $(document).ready(function () {
         preVal   = null;
         operator = null;
         decFlag  = curVal.toString().indexOf(".") !== -1 ? true: false;
-        console.log(curVal, typeof(curVal)); // DEBUG
+        // console.log(curVal, typeof(curVal)); // DEBUG
         $('#screen').text(formatDisplay(curVal));
     }//================================================================//
 
@@ -122,7 +122,7 @@ $(document).ready(function () {
         else {
             curVal  = curVal.toString() + ".";
             decFlag = true;
-            console.log(curVal, typeof(curVal)); // DEBUG
+            // console.log(curVal, typeof(curVal)); // DEBUG
             $('#screen').text(curVal);
         }
     }//================================================================//
