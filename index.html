@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Javascript Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="screen">&nbsp</div>
+        <!-- #screen -->
+        <div class="keys">
+            <div class="row">
+                <button id="ac">AC</button>
+                <button id="sqt" class="operator unary">&radic;</button>
+                <button id="pct" class="operator unary">%</button>
+                <button id="div" class="operator binary">&div;</button>
+            </div>
+            <!-- .row -->
+
+            <div class="row">
+                <button id="7" class="number">7</button>
+                <button id="8" class="number">8</button>
+                <button id="9" class="number">9</button>
+                <button id="mul" class="operator binary">x</button>
+            </div>
+            <!-- .row -->
+
+            <div class="row">
+                <button id="4" class="number">4</button>
+                <button id="5" class="number">5</button>
+                <button id="6" class="number">6</button>
+                <button id="sub" class="operator binary">-</button>
+            </div>
+            <!-- .row -->
+
+            <div class="row">
+                <button id="1" class="number">1</button>
+                <button id="2" class="number">2</button>
+                <button id="3" class="number">3</button>
+                <button id="add" class="operator binary">+</button>
+            </div>
+            <!-- .row -->
+
+            <div class="row">
+                <button id="0" class="number">0</button>
+                <button id="dec" class="operator">.</button>
+                <button id="neg" class="operator unary">&plusmn;</button>
+                <button id="eq" class="operator">=</button>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .keys -->
+    </div>
+    <!-- #calculator -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="scripts/logic.js"></script>
+</body>
+
+</html>
